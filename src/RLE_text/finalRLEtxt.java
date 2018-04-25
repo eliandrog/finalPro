@@ -1,0 +1,547 @@
+package RLE_text;
+
+import RLE_Image.Cobject;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.Array;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * Created by dave on 11/11/17.
+ */
+public class finalRLEtxt  {
+    public static String compSqnc="";
+    public  StringBuilder string;
+    public String compS="",compStringToFile;
+    public static ArrayList<Integer>runLst=new ArrayList<Integer>();
+    public static String decompSqnc="",fileN="";
+    public static int emptyLC=0;
+    public static boolean isLEmpty;
+    static char[] compressedStringCharArr;
+    public static String compressionRatioRLEText;
+    public String errormessage;
+    public ArrayList<Object> ComObjects;
+
+
+    public finalRLEtxt(){}
+
+
+    public  String compress(String file) throws IOException {
+
+        try {
+
+            fileN=file.substring(0,file.indexOf('.'));
+            Scanner reader = new Scanner(new File(file));
+            compSqnc="";
+            ComObjects=new ArrayList<Object>();
+            ComObjects.clear();
+            while (reader.hasNextLine()) {
+                String line = reader.nextLine();
+                boolean addedL=false;
+               //gets repeated runs from each line
+                for (int i = 0; i < line.length(); i++) {
+                    int run = 1;
+                    while (i + 1 < line.length() && line.charAt(i) == line.charAt(i + 1)) {
+
+
+
+
+                        run++;
+
+                        i++;
+                    }
+
+
+
+
+
+
+
+
+                    //add char to new compressed string
+                    int nos=run/9;
+                    int rem=run%9;
+
+                   //finding how many full 9*(char) there are
+                    if(run>9){
+
+                        String s3="";
+                        String s2="9*";
+                        for(int k=1;k<=nos;k++){
+
+                            s3=s3+s2+line.charAt(i);
+
+
+
+
+                        }
+
+
+                        //compressedStringCharArr+= String.toCharArray(s3);
+                        //adding compressed object when ful eg 9*g9*e
+                        compSqnc+=s3;
+
+                        //addign the remainder of a full compressed that is less than 3 as its not efficient to compress it
+                        if(rem<3){
+                            String charstoStr="";
+                            for (int t=0;t<rem;t++){
+                                charstoStr+=line.charAt(i);
+                                //System.out.println("i am less than 3");
+                            }
+                          compSqnc+= charstoStr;
+                        }else {
+                            //if remainder is more than 3 its effective to compresss it
+                            compSqnc+=rem+"*"+line.charAt(i);
+                        }
+
+
+                        runLst.add(run);
+                    }else if(run<10&& run>2){
+                        compSqnc=compSqnc+run+"*"+line.charAt(i);
+                    }else{
+                        int p=0;
+                        while (p<run){
+                        compSqnc=compSqnc+line.charAt(i);
+                        p++;
+                        }
+                    }
+
+                }
+                //adds a new line after reading a new line if its not longer than 2 lines
+                //
+//                if(!(emptyLC>0)){
+//                compSqnc+="\n";
+//                }
+//                if(!addedL ){
+//                    compSqnc+="\n";
+//                }
+                compSqnc+="\n";
+
+//                //edit
+//                //add new line code
+//
+//                ComObjects.add("\n");
+//
+//                //finish edit
+            }
+            //System.out.println(Arrays.toString(ComObjects.toArray()));
+
+            ///edit
+            //remove last new line
+//            ComObjects.remove(ComObjects.size()-1);
+            //compress line repetition that isnt compressed
+
+//            for (int p=0;p<ComObjects.size();p++){
+//                int run=1;
+//                while (p + 1 < ComObjects.size() &&  ComObjects.get(p) == ComObjects.get(p + 1)) {
+//
+//
+//
+//
+//                    run++;
+//
+//                    p++;
+//                }
+//
+//                if (run>1){
+//                    System.out.println(run);
+//                    //ComObjects.add(i-run+1,new RLECObject((byte)run,(byte)ComObjects.get(i).toString().charAt(0)));
+//                    ComObjects.set(p-run+1,new RLECObject((byte)run,(byte)ComObjects.get(p).toString().charAt(0)));
+//                    //System.out.print(Arrays.toString(ComObjects.toArray()));System.out.println("           Size ="+ComObjects.size()+"      i="+i);
+//                    //System.out.println(i);
+//                    int g=run,h= p;
+//                    int removed=0;
+//
+//                    while(removed<run-1) {
+//                        //removing the last element that was repeated
+//                        //System.out.println(StringEscapeUtils.escapeJava(Arrays.toString(ComObjects.toArray())));
+//                        //System.out.println(i);
+//                        ComObjects.remove(p-run+2);
+//
+//                        removed++;
+//
+//
+//                    }
+//                }
+//
+//            }
+//            System.out.println("Final:  "+Arrays.toString(ComObjects.toArray())+"    Size="+ComObjects.size());
+//            ///finish edit
+
+
+
+
+
+
+            //this compresses the empty lines if any
+            try {
+
+                //PrintWriter printWritter= new PrintWriter(stringWriter);
+
+                //System.out.println(StringEscapeUtils.escapeJava(compSqnc));
+                String copyCompSqnc= compSqnc;
+                string=new StringBuilder();
+                //System.out.println("length of string to append   "+string.length());
+                if(string.length()>0){
+                    while(string.length()>0){
+                        string.delete(0,1);
+
+                    }
+                }
+
+
+                //compressing empty lines or new lines chars
+                for (int i=0;i<copyCompSqnc.length();i++){
+                    int run=1;
+                    String str="";
+                    while (i + 1 < copyCompSqnc.length() && copyCompSqnc.charAt(i) == copyCompSqnc.charAt(i + 1) && (int)copyCompSqnc.charAt(i)==10) { //ascii value for new line
+//
+                        run++;
+
+                        i++;
+                    }
+                    if(run>3 && run<10) {
+                        //char c = (int) 10;
+                        String s = run + "*\n";
+                        String substring = copyCompSqnc.substring((i + 1) - run, i+1);
+                        //System.out.println(StringEscapeUtils.escapeJava(substring)+"        "+i);
+                        string.append(s);
+                        //string.append(StringEscapeUtils.escapeJava(copyCompSqnc.replaceFirst(substring,s)));
+                        //System.out.println(StringEscapeUtils.escapeJava(string.append(substring).toString()));
+                        //System.out.println(StringEscapeUtils.escapeJava(copyCompSqnc));
+                        //System.out.println("the substring is "+StringEscapeUtils.escapeJava(substring));
+                        //System.out.println(StringEscapeUtils.escapeJava(compSqnc.replaceFirst(substring, s)));
+                        //System.out.println(run+"    "+StringEscapeUtils.escapeJava(substring));
+
+                    }else if(run>9){
+                        //System.out.println("run is bigger than 9");
+                        String s="";
+                        String repStr="9*\n";
+                        int rep=run/9;
+                        int rem=run%9;
+                        int j=0;
+                        while(j<rep){
+
+                            s=s+repStr;
+                            j++;
+
+                        }
+                        //it only compresses remaining chars if there are more than 2
+                        if(rem<3){
+                            int l=0;
+                            while(l<rem){
+                                s=s+"\n";
+                                l++;
+                            }
+
+                        }else {
+
+
+                            s =s+rem + "*\n";
+                        }
+                        string.append(s);
+
+                    }else if(run<3){
+                        int j=0;
+                        while(j<run){
+                            string.append(copyCompSqnc.charAt(i));
+                            j++;}
+                    }
+
+
+
+                }
+                //System.out.println("text: "+StringEscapeUtils.escapeJava(string.toString()));
+                //System.out.println((int)string.charAt(3));
+
+                //System.out.println("Text in output text "+ co +StringEscapeUtils.escapeJava(text.toString()));
+
+
+//            for (int i=0; i<compSqnc.length();i++){
+//                int run=1;
+//                String str="";
+//                while (i + 1 < compSqnc.length() && compSqnc.charAt(i) == compSqnc.charAt(i + 1) && (int)compSqnc.charAt(i)==10) { //ascii value for new line
+//
+//                    run++;
+//
+//                    i++;
+//                }
+//
+//                //to be more efficient more than 3 repeating characters have to be occuring
+//                if(run>3){
+//                    char c=(int)10;
+//                    String s=run+"*"+c;
+//                    String substring=compSqnc.substring((i+1)-run,i);
+//                    //compSqnc.replaceFirst(compSqnc.substring(i-run,i),s);
+//                    //System.out.println("the substring is "+StringEscapeUtils.escapeJava(substring));
+//                    System.out.println(StringEscapeUtils.escapeJava(compSqnc.replaceFirst(substring,s)));
+//
+//                }
+
+                //System.out.println(run+"  "+i);
+
+
+                //System.out.println(compSqnc.substring(i-run,i));
+
+                //}
+                //System.out.println(compSqnc);
+
+
+                String filename="rleCom.txt";
+                int c=0,c1=0;
+//            Scanner readNoLines=new Scanner(new FileReader(filename));
+//            while(readNoLines.hasNextLine()){
+//                String line=readNoLines.nextLine();
+//
+////                c1++;
+//                //System.out.println(line);
+//                //System.out.println(StringEscapeUtils.escapeJava(line));
+//
+//                if(!line.isEmpty()) {
+//                    c++;
+//
+//                }
+//
+//
+//
+//            }
+
+                //System.out.println("number of lines "+c1);
+
+
+                //deleting file if exists
+                System.out.println(fileN+filename);
+                Path path = FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", fileN+filename);    //needs to be chnged to appropriate system
+                boolean success= Files.deleteIfExists(path);
+
+                //adding compressed string to a file and writing in it
+                PrintWriter writer=new PrintWriter(fileN+filename,"UTF-8");
+                //need to delete everything inside writer
+                System.out.println(string.toString());
+
+                writer.println(string.toString());
+                writer.close();
+                //System.out.println(string.toString());
+                // remove the last appending new line char
+                compSqnc=StringUtils.chomp(compSqnc);
+
+                //if it gets to the end of it means no errors
+                return string.toString();
+            }catch(Exception E){
+                E.printStackTrace();
+                errormessage=("Error in output to file");
+            }
+
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
+            errormessage="File does not exist or open as its not text only";
+        }
+
+
+        return null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+    public  String decompress(String compressedString) throws IOException {
+        int i=0;int o=0;
+
+        decompSqnc="";
+        //System.out.println("heere");
+        //outerloop:
+        while(i<compressedString.length()){
+            //checks for digit control delimiter(*) and character after it-works
+            //System.out.println(compressedString.substring(i,i+1));
+//            try {
+//                boolean ischarDigit= Character.isDigit(compressedString.charAt(i));
+//                //System.out.println(ischarDigit);
+//
+//                boolean isDelimiterAftrDigit=compressedString.charAt(i+1)== '*';
+//
+//                //System.out.println(Arrays.toString(String.valueOf("*").getBytes()));
+//
+//                //System.out.println(compressedString.charAt(i)+"    "+String.valueOf(compressedString.charAt((i+1)))+"      "+ Arrays.toString(compressedString.substring(i, (i + 2)).getBytes()) +"        "+isDelimiterAftrDigit);
+//
+//
+//                //System.out.println(String.valueOf(compressedString.charAt((i+1))));
+//
+//
+//
+//                //if i find the compressed patterns inside the string expansion occurs here
+//                if ( ischarDigit  && i + 1 < compressedString.length() && isDelimiterAftrDigit ) {
+//
+//                    String ltrRep= String.valueOf(compressedString.charAt(i+2));
+//
+//                    int digit=Integer.parseInt(String.valueOf(compressedString.charAt(i)));
+//                    System.out.println(ltrRep);
+//                    String strRps="";
+//                    int counter=0;
+//                    while(counter<digit){
+//                        //System.out.println(digit);
+//                        strRps+=ltrRep;
+//
+//                        counter++;
+//                        //System.out.println(i);
+//                    }
+//                    decompSqnc+=strRps;
+//
+//
+//
+//
+//
+//
+//
+//                    i++;
+//                }else{
+//                    i++;
+//                }
+//
+//                i++;
+//            }catch(Exception e){
+//
+//
+//
+//            }
+//
+//
+//            if(i==compressedString.length()){
+//                //break outerloop;
+//            }
+//            //System.out.println(decompSqnc);
+
+            String subStr="";
+            if( Character.isDigit(compressedString.charAt(i)) && compressedString.charAt(i+1)=='*' ){
+
+                int charC=0;
+                while( charC < Integer.parseInt(String.valueOf(compressedString.charAt(i)))){
+
+                    subStr+=compressedString.charAt(i+2);
+                    //System.out.println(compressedString.charAt(i+2)+"  "+Integer.parseInt(String.valueOf(compressedString.charAt(i))));
+
+                    charC++;
+
+                }
+                //if its here it has checked for the 3 chars num/*/char so add 3 to i to et a new char not previously checked
+
+                i=i+3;
+
+
+            }else{
+                subStr=String.valueOf(compressedString.charAt(i));
+                i++;
+            }
+            decompSqnc+=subStr;
+            //System.out.println(StringEscapeUtils.escapeJava(decompSqnc));
+            //System.out.println("got here");
+
+
+        }
+
+        System.out.println("decompressseddd "+ decompSqnc);
+
+        Path path = FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", fileN+"rleDecom.txt");
+        boolean success= Files.deleteIfExists(path);
+        PrintWriter output=new PrintWriter(new File(fileN+"rleDecom.txt"));
+        output.println(decompSqnc);
+        output.close();
+        //decompSqnc=StringUtils.chomp(decompSqnc);
+
+
+        return decompSqnc;
+
+    }
+
+
+
+    public  String efficiency(String originalAlg, String compressedAlg){
+        int cO=0,cC=0;
+        for(char c:originalAlg.toCharArray()){
+            cO++;
+        }
+        for (char ch:compressedAlg.toCharArray()){
+            cC++;
+        }
+//        System.out.println(cO);
+//        System.out.println(cC);
+//        System.out.println(compressedAlg);
+
+
+        //savings
+        double savings=(1-((double)cC/(double)cO))*100;
+
+        //compression ratio
+        DecimalFormat df= new DecimalFormat("#.##");
+        double ratio= (double)cO/(double)cC;
+        compressionRatioRLEText=df.format(ratio)+" : 1";
+
+        String s=String.format("%,.3f",savings)+"%";
+
+
+
+
+        return s;
+    }
+
+
+    public  String originalText(String filename) throws IOException {
+        String text= "";
+        char c;
+        int i=0;
+        FileInputStream fis = new FileInputStream(filename);
+        while(fis.available() > 0){
+            c = (char) fis.read();
+            text=text+c;
+
+
+        }
+        text=text.replaceAll("(\r\n)","\n");
+        return text;
+    }
+
+    public static void filePrinter(String compressedString){
+
+
+//        try {
+//            PrintWriter printer = new PrintWriter(new File("myTextFile.txt"));
+//            printer.println("Your text is:" + text);
+//            printer.close();
+//        } catch (FileNotFoundException fnfe) {
+//            fnfe.printStackTrace();
+//        }
+
+    }
+
+
+    public static void main(String[] args) throws IOException {
+        String filename="file.txt";
+        ;
+//        System.out.println(finalRLEtxt.decompress(finalRLEtxt.compress(filename)));
+//        String ogT=originalText(filename);
+//        String cTxt=compress(filename);
+//        System.out.println(finalRLEtxt.efficiency(ogT,cTxt));
+    }
+
+}

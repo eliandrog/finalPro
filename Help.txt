@@ -1,0 +1,8 @@
+
+These are the steps to follow to work with the code:
+
+1-> Select Picture or Text (eg: if you want to compress a text file press Text) 
+2-> Select different Algorithms 
+3-> Type the name of your file with its extension (eg: file.txt  or file.png)
+4-> Press "Submit" button 
+5-> Find out which Algorithm is the best for your file and the compressed and decompressed Files.
