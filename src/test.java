@@ -1,18 +1,18 @@
 import LZW.LZW;
-import RLE_text.RLE;
 import RLE_text.finalRLEtxt;
 import huffman.HuffmansTree;
 import huffman.Node;
+import huffman_image.huff_Img_Node;
+import huffman_image.huff_img;
 import org.junit.jupiter.api.Test;
 
-import java.io.DataInputStream;
-import java.io.File;
+import java.awt.*;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.Map;
 
 import static huffman.HuffmansTree.*;
+import static huffman_image.huff_img.areCodesPrefix;
+import static huffman_image.huff_img.assignEncoding;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class test {
@@ -55,13 +55,32 @@ public class test {
         HuffmansTree ht=new HuffmansTree();
         Node fRoot=buildHuffT((makeFreq(originalTextHT(filename))));
 
-        Map<Character,String> map= assignEncoding(fRoot);
+        Map<Character,String> map= ht.assignEncoding(fRoot);
         efficiencyHT(originalTextHT(filename),map);
         String decoded=decode(exportBinaryString(),map);
         assertEquals(true,originalTextHT(filename).equals(decoded));
 
 
 
+    }
+
+    @Test
+    public void arecodesPrefixHFMIM(){
+
+
+        try {
+
+        //Huffmans encoding Image
+        huff_img huff = new huff_img("image.tiff");
+        huff_Img_Node finalNode = huff.buildHFT();
+        Map<Color, String> bitCodeMap = assignEncoding(finalNode);      //makes map og the final node tree and its given bitcode
+        huff.encodeImage(huff.ogImage, bitCodeMap);
+        huff.decompress(finalNode);
+        huff.rebuildImage(huff.compImg);
+        assertEquals(true,areCodesPrefix(bitCodeMap));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

@@ -17,15 +17,14 @@ public class RLE_ImgFinal {
     public static boolean monochrome;
     public   int[][]picPxlArr;
     public Color[][] colorPxlArray;
-    public Object[][]decompressedColorPxlArr;
-    public  String filename;
-    public static ArrayList[] carray;//=new ArrayList<Object>();
     public Integer[][]alphavalues;
     public int BitsUsed;
     public static String FName;
     public static String compressionRatioRLEIMG;
 
-
+   // public Object[][]decompressedColorPxlArr;
+//    public  String filename;
+//    public static ArrayList[] carray;//=new ArrayList<Object>();
 
 
     public  RLE_ImgFinal(BufferedImage image) throws AWTException, IOException {
@@ -138,7 +137,6 @@ public class RLE_ImgFinal {
         return picPxlArr;
     }
     
-
 
 
 //    public String[][] compressingcArr(int[][] picArr){
@@ -378,63 +376,7 @@ public class RLE_ImgFinal {
     }
 
 
-    public String[][] decompresser(String[][] compArray){
-        String[][] decomArr=new String[picHeight][];
-        int total=0;
 
-
-
-        for (int y=0;y<compArray.length;y++      ) {
-            String[] rows=new String [picWidth];
-            List<String> list=new ArrayList<String>(rows.length);
-            for (int x=0;x<compArray[y].length;x++){
-
-                if(!compArray[y][x].contains("*")){
-
-                    //list.addAll(Arrays.asList(rows));
-                    //decomArr[y]=  list.toArray(new String[list.size()]);
-                    //img.setRGB(x,y,Integer.parseInt(compArray[y][x]));
-                    list.add(compArray[y][x]);
-                    total+=8;
-
-                }else{
-                     int p=compArray[y][x].indexOf("*");
-                     int run= Integer.valueOf(compArray[y][x].substring(0,p));
-                        //System.out.println(run);
-                     int rgb=Integer.parseInt(compArray[y][x].substring(p+1,compArray[y][x].length()));
-                        //System.out.println(rgb);
-                     int counter=0;
-                     while(counter<run){
-                         //System.out.println(counter);
-                         //System.out.println(String.valueOf(rgb));
-                         list.add(String.valueOf(rgb));
-                         counter++;
-                     }
-                     total+=24;
-
-                }
-
-
-            }
-            //System.out.println(list);
-            decomArr[y]= list.toArray(new String[list.size()]);
-        }
-
-
-        System.out.println(Arrays.toString(decomArr[0]));
-
-
-
-        BitsUsed=total;
-
-
-
-
-        return decomArr;
-
-
-
-    }
 
     public Color[][] decompressColor(ArrayList[] compressedArray){
 
@@ -474,12 +416,25 @@ public class RLE_ImgFinal {
     }
 
 
-    public int efficiency(){
+    public void rebuildColor(Color[][] decompressedArr) throws IOException {
+
+        BufferedImage img=new BufferedImage(picWidth,picHeight,BufferedImage.TYPE_INT_RGB);
 
 
-        System.out.println(BitsUsed);
-        return BitsUsed;
+        File decompressedFile=new File("rleDeco"+FName+".png");
+        //System.out.println("here");
 
+        for (int y=0;y<decompressedArr.length;y++){
+
+            for (int x=0; x<decompressedArr[y].length;x++){
+                //Color c=decompressedArr[y][x];
+
+                img.setRGB(x,y,decompressedArr[y][x].getRGB());
+                //img.setRGB(x,y,c.getRGB());
+            }
+        }
+
+        ImageIO.write(img,"PNG",decompressedFile);
     }
 
     public double efficiencyColor(ArrayList[] compressedArr){
@@ -558,26 +513,69 @@ public class RLE_ImgFinal {
 
 
     }
-
-    public void rebuildColor(Color[][] decompressedArr) throws IOException {
-
-        BufferedImage img=new BufferedImage(picWidth,picHeight,BufferedImage.TYPE_INT_RGB);
+    public int efficiency(){
 
 
-        File decompressedFile=new File("rleDeco"+FName+".png");
-        //System.out.println("here");
+        System.out.println(BitsUsed);
+        return BitsUsed;
 
-        for (int y=0;y<decompressedArr.length;y++){
+    }
+    public String[][] decompresser(String[][] compArray){
+        String[][] decomArr=new String[picHeight][];
+        int total=0;
 
-            for (int x=0; x<decompressedArr[y].length;x++){
-                //Color c=decompressedArr[y][x];
 
-                img.setRGB(x,y,decompressedArr[y][x].getRGB());
-                //img.setRGB(x,y,c.getRGB());
+
+        for (int y=0;y<compArray.length;y++      ) {
+            String[] rows=new String [picWidth];
+            List<String> list=new ArrayList<String>(rows.length);
+            for (int x=0;x<compArray[y].length;x++){
+
+                if(!compArray[y][x].contains("*")){
+
+                    //list.addAll(Arrays.asList(rows));
+                    //decomArr[y]=  list.toArray(new String[list.size()]);
+                    //img.setRGB(x,y,Integer.parseInt(compArray[y][x]));
+                    list.add(compArray[y][x]);
+                    total+=8;
+
+                }else{
+                    int p=compArray[y][x].indexOf("*");
+                    int run= Integer.valueOf(compArray[y][x].substring(0,p));
+                    //System.out.println(run);
+                    int rgb=Integer.parseInt(compArray[y][x].substring(p+1,compArray[y][x].length()));
+                    //System.out.println(rgb);
+                    int counter=0;
+                    while(counter<run){
+                        //System.out.println(counter);
+                        //System.out.println(String.valueOf(rgb));
+                        list.add(String.valueOf(rgb));
+                        counter++;
+                    }
+                    total+=24;
+
+                }
+
+
             }
+            //System.out.println(list);
+            decomArr[y]= list.toArray(new String[list.size()]);
         }
 
-        ImageIO.write(img,"PNG",decompressedFile);
+
+        System.out.println(Arrays.toString(decomArr[0]));
+
+
+
+        BitsUsed=total;
+
+
+
+
+        return decomArr;
+
+
+
     }
 
 

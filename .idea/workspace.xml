@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/huffman/GraphViz.java" description="GraphViz gv=new GraphViz();" line="2" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cfe88a-b1f9-4129-a978-f2b543c685b2" name="Default" comment="" />
+    <list default="true" id="56cfe88a-b1f9-4129-a978-f2b543c685b2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/HuffmansDecodedDatafile.txt" afterPath="$PROJECT_DIR$/HuffmansDecodedDatafile.txt" />
+      <change beforePath="$PROJECT_DIR$/LZWComfile.txt" afterPath="$PROJECT_DIR$/LZWComfile.txt" />
+      <change beforePath="$PROJECT_DIR$/LZWDecomfile.txt" afterPath="$PROJECT_DIR$/LZWDecomfile.txt" />
+      <change beforePath="$PROJECT_DIR$/file.txt" afterPath="$PROJECT_DIR$/file.txt" />
+      <change beforePath="$PROJECT_DIR$/huffmansencondedDatafile.txt" afterPath="$PROJECT_DIR$/huffmansencondedDatafile.txt" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/Gui/Home$ButtonHandler.class" afterPath="$PROJECT_DIR$/out/production/Project/Gui/Home$ButtonHandler.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/Gui/Home$HelpButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Project/Gui/Home$HelpButtonListener.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/Gui/Home$RadioButtonActionListener.class" afterPath="$PROJECT_DIR$/out/production/Project/Gui/Home$RadioButtonActionListener.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/Gui/Home.class" afterPath="$PROJECT_DIR$/out/production/Project/Gui/Home.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/LZW/LZW.class" afterPath="$PROJECT_DIR$/out/production/Project/LZW/LZW.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_Image/RLE_ImgFinal.class" afterPath="$PROJECT_DIR$/out/production/Project/RLE_Image/RLE_ImgFinal.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_Image/compressedObject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_Image/main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_text/RLE.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_text/finalRLEtxt.class" afterPath="$PROJECT_DIR$/out/production/Project/RLE_text/finalRLEtxt.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/RLE_text/main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/huffman/GraphViz$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/huffman/GraphViz.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/huffman/HuffmansTree.class" afterPath="$PROJECT_DIR$/out/production/Project/huffman/HuffmansTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project/test.class" afterPath="$PROJECT_DIR$/out/production/Project/test.class" />
+      <change beforePath="$PROJECT_DIR$/rleDeco.png" afterPath="$PROJECT_DIR$/rleDeco.png" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Home.java" afterPath="$PROJECT_DIR$/src/Gui/Home.java" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Main_methods.java" afterPath="$PROJECT_DIR$/src/Gui/Main_methods.java" />
+      <change beforePath="$PROJECT_DIR$/src/LZW/LZW.java" afterPath="$PROJECT_DIR$/src/LZW/LZW.java" />
+      <change beforePath="$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java" afterPath="$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java" />
+      <change beforePath="$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java" afterPath="$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java" />
+      <change beforePath="$PROJECT_DIR$/src/huffman/HuffmansTree.java" afterPath="$PROJECT_DIR$/src/huffman/HuffmansTree.java" />
+      <change beforePath="$PROJECT_DIR$/src/huffman/Node.java" afterPath="$PROJECT_DIR$/src/huffman/Node.java" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" afterPath="$PROJECT_DIR$/src/test.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,24 +51,29 @@
       <file leaf-file-name="HuffmansTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/huffman/HuffmansTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="375" column="67" lean-forward="false" selection-start-line="375" selection-start-column="67" selection-end-line="375" selection-end-column="67" />
+            <state relative-caret-position="-551">
+              <caret line="298" column="86" lean-forward="false" selection-start-line="298" selection-start-column="86" selection-end-line="298" selection-end-column="86" />
               <folding>
-                <element signature="method#makeFreq#0;class#HuffmansTree#0" expanded="false" />
-                <element signature="e#1903#1981#0" expanded="false" />
+                <element signature="e#2104#2182#0" expanded="false" />
                 <element signature="method#makeMinHeap#0;class#HuffmansTree#0" expanded="false" />
                 <element signature="method#buildHuffT#0;class#HuffmansTree#0" expanded="false" />
-                <element signature="e#3989#4070#0" expanded="false" />
+                <element signature="e#4552#4633#0" expanded="false" />
                 <element signature="method#getArrNodes#0;class#HuffmansTree#0" expanded="false" />
-                <element signature="e#6840#6911#0" expanded="false" />
+                <element signature="method#assignEncoding#0;class#HuffmansTree#0" expanded="false" />
+                <element signature="method#assignEncoding#1;class#HuffmansTree#0" expanded="false" />
+                <element signature="method#Decompress#0;class#HuffmansTree#0" expanded="false" />
+                <element signature="method#Decompress#1;class#HuffmansTree#0" expanded="false" />
+                <element signature="e#7272#7343#0" expanded="false" />
                 <element signature="method#charCode#0;class#HuffmansTree#0" expanded="false" />
                 <element signature="method#originalTextHT#0;class#HuffmansTree#0" expanded="false" />
-                <element signature="e#8300#8325#0" expanded="false" />
-                <element signature="e#9841#9889#0" expanded="false" />
-                <element signature="e#10225#10279#0" expanded="false" />
-                <element signature="e#10491#10517#0" expanded="false" />
+                <element signature="method#efficiencyHT#0;class#HuffmansTree#0" expanded="false" />
+                <element signature="e#8732#8757#0" expanded="false" />
+                <element signature="method#exportBinaryString#0;class#HuffmansTree#0" expanded="false" />
+                <element signature="e#10542#10590#0" expanded="false" />
+                <element signature="e#10926#10980#0" expanded="false" />
+                <element signature="e#11192#11218#0" expanded="false" />
                 <element signature="method#getKeyFromValue#0;class#HuffmansTree#0" expanded="false" />
-                <element signature="e#11862#11907#0" expanded="false" />
+                <element signature="e#12832#12877#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,58 +82,97 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/huffman/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="680">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="method#Node#0;class#Node#0" expanded="false" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmansDecodedDatafile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HuffmansDecodedDatafile.txt">
+      <file leaf-file-name="finalRLEtxt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="350">
+              <caret line="346" column="12" lean-forward="true" selection-start-line="346" selection-start-column="12" selection-end-line="349" selection-end-column="114" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#677#719#0" expanded="false" />
+                <element signature="method#compress#0;class#finalRLEtxt#0" expanded="false" />
+                <element signature="e#1163#1200#0" expanded="false" />
+                <element signature="e#3371#3444#0" expanded="false" />
+                <element signature="e#3731#3791#0" expanded="false" />
+                <element signature="e#5517#5575#0" expanded="false" />
+                <element signature="e#6307#6333#0" expanded="false" />
+                <element signature="e#6813#6899#0" expanded="false" />
+                <element signature="e#8679#8758#0" expanded="false" />
+                <element signature="e#10121#10193#0" expanded="false" />
+                <element signature="e#11431#11527#0" expanded="false" />
+                <element signature="e#11612#11645#0" expanded="false" />
+                <element signature="e#15106#15139#0" expanded="false" />
+                <element signature="method#main#0;class#finalRLEtxt#0" expanded="false" />
+                <element signature="e#17115#17200#0" expanded="false" />
+                <element signature="e#17358#17420#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LZWComfile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LZWComfile.txt">
+      <file leaf-file-name="LZW.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LZW/LZW.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+              <folding>
+                <element signature="method#compression#0;class#LZW#0" expanded="false" />
+                <element signature="method#decompress#0;class#LZW#0" expanded="false" />
+                <element signature="e#3863#3902#0" expanded="false" />
+                <element signature="method#writoToFile#0;class#LZW#0" expanded="false" />
+                <element signature="method#main#0;class#LZW#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LZWDecomfile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LZWDecomfile.txt">
+      <file leaf-file-name="RLE_ImgFinal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="319">
+              <caret line="418" column="75" lean-forward="true" selection-start-line="418" selection-start-column="75" selection-end-line="418" selection-end-column="75" />
+              <folding>
+                <element signature="e#638#682#0" expanded="false" />
+                <element signature="method#RLE_ImgFinal#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="e#2474#2525#0" expanded="false" />
+                <element signature="e#3721#3768#0" expanded="false" />
+                <element signature="e#4089#4145#0" expanded="false" />
+                <element signature="method#compressingColorArr#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="method#decompressColor#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="method#efficiencyColor#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="method#rebuilding#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="method#efficiency#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="method#decompresser#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="e#17733#17741#0" expanded="true" />
+                <element signature="method#main#0;class#RLE_ImgFinal#0" expanded="false" />
+                <element signature="e#19677#19806#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LZWDecommyTextFile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LZWDecommyTextFile.txt">
+      <file leaf-file-name="Cobject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RLE_Image/Cobject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myTextFile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myTextFile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,18 +181,23 @@
       <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+              <folding>
+                <element signature="method#decompressionEqualityLZW#0;class#test#0" expanded="false" />
+                <element signature="method#decompressionEqualityRUN#0;class#test#0" expanded="false" />
+                <element signature="method#decompressionEqualityHUFF#0;class#test#0" expanded="false" />
+                <element signature="method#arecodesPrefixHFMIM#0;class#test#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/file.txt">
+      <file leaf-file-name="Main_methods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gui/Main_methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,15 +206,12 @@
       <file leaf-file-name="huff_img.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/huffman_image/huff_img.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="222" column="112" lean-forward="false" selection-start-line="222" selection-start-column="112" selection-end-line="222" selection-end-column="112" />
+            <state relative-caret-position="51">
+              <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
               <folding>
                 <element signature="method#huff_img#0;class#huff_img#0" expanded="false" />
                 <element signature="e#1509#1654#0" expanded="false" />
-                <element signature="method#buildHFT#0;class#huff_img#0" expanded="false" />
                 <element signature="method#assignEncoding#0;class#huff_img#0" expanded="false" />
-                <element signature="method#assignEncoding#1;class#huff_img#0" expanded="false" />
-                <element signature="method#encodeImage#0;class#huff_img#0" expanded="false" />
                 <element signature="method#decompress#0;class#huff_img#0" expanded="false" />
                 <element signature="e#6021#6083#0" expanded="false" />
                 <element signature="method#getKeyFromValue#0;class#huff_img#0" expanded="false" />
@@ -146,8 +220,29 @@
                 <element signature="e#8476#8500#0" expanded="false" />
                 <element signature="method#areCodesPrefix#0;class#huff_img#0" expanded="false" />
                 <element signature="method#rebuildImage#0;class#huff_img#0" expanded="false" />
+                <element signature="method#efficiency#0;class#huff_img#0" expanded="false" />
                 <element signature="e#12325#12369#0" expanded="false" />
                 <element signature="e#13704#13748#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Gui/Home.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="661" column="0" lean-forward="true" selection-start-line="661" selection-start-column="0" selection-end-line="661" selection-end-column="0" />
+              <folding>
+                <element signature="e#1209#1235#0" expanded="false" />
+                <element signature="e#5772#5806#0" expanded="false" />
+                <element signature="e#6417#6464#0" expanded="false" />
+                <element signature="method#ButtonHandler#0;class#ButtonHandler#0;class#Home#0" expanded="false" />
+                <element signature="e#10595#10739#0" expanded="false" />
+                <element signature="e#16082#16097#0" expanded="true" />
+                <element signature="e#16876#17018#0" expanded="false" />
+                <element signature="e#18502#18684#0" expanded="false" />
+                <element signature="e#29656#29713#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,14 +259,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Syste</find>
-      <find>monoch</find>
-      <find>compa</find>
-      <find>0</find>
-      <find>1</find>
-      <find>le</find>
-      <find>java.awt.Color[r=164,g=164,b=164]=0000010</find>
-      <find>java.awt.Color[r=101,g=101,b=101]=00000000</find>
       <find>Syst</find>
       <find>Sys</find>
       <find>FILENAME</find>
@@ -194,10 +281,21 @@
       <find>error</find>
       <find>Bits</find>
       <find>195</find>
+      <find>No Errors</find>
+      <find>No errors</find>
+      <find>error in</find>
+      <find>Error</find>
+      <find>Ja</find>
+      <find>Com</find>
+      <find>ComO</find>
+      <find>+de</find>
     </findStrings>
     <replaceStrings>
       <replace>RunEfficiency</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -212,14 +310,11 @@
         <option value="$PROJECT_DIR$/src/src/RLE_Text/Main_methods.java" />
         <option value="$USER_HOME$/Downloads/Assignmentfinal_Eliandro Goncalves_1504492/CE203_2016_Ex2.java" />
         <option value="$PROJECT_DIR$/src/RLE_text/Main_methods.java" />
-        <option value="$PROJECT_DIR$/src/huffman/Node.java" />
         <option value="$PROJECT_DIR$/src/RLE_text/Home.java" />
         <option value="$PROJECT_DIR$/src/Main_methods.java" />
         <option value="$PROJECT_DIR$/src/Home.java" />
-        <option value="$PROJECT_DIR$/src/Gui/Main_methods.java" />
         <option value="$PROJECT_DIR$/src/RLE_text/main.java" />
         <option value="$PROJECT_DIR$/src/Gui/Main.java" />
-        <option value="$PROJECT_DIR$/src/RLE_Image/main.java" />
         <option value="$PROJECT_DIR$/src/RLE_Image/RLE_Img.java" />
         <option value="$PROJECT_DIR$/src/jpeg/jpeg.java" />
         <option value="$PROJECT_DIR$/src/huffman/GraphViz.java" />
@@ -230,30 +325,38 @@
         <option value="$PROJECT_DIR$/src/huffman/Main.java" />
         <option value="$PROJECT_DIR$/src/RLE_text/LZW.java" />
         <option value="$PROJECT_DIR$/huffmansencondedData.txt" />
-        <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/h.java" />
         <option value="$PROJECT_DIR$/src/RLE_Image/Cobject.java" />
         <option value="$PROJECT_DIR$/src/LZW_Img/lzw_img.java" />
         <option value="$PROJECT_DIR$/src/huffman_image/huff_Img_Node.java" />
-        <option value="$PROJECT_DIR$/filerleCom.txt" />
-        <option value="$PROJECT_DIR$/src/Gui/Home.java" />
-        <option value="$PROJECT_DIR$/src/LZW/LZW.java" />
         <option value="$PROJECT_DIR$/src/RLE_text/RLECObject.java" />
-        <option value="$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java" />
         <option value="$PROJECT_DIR$/src/huffman_image/huff_img.java" />
         <option value="$PROJECT_DIR$/src/RLE_Image/compressedObject.java" />
-        <option value="$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java" />
         <option value="$PROJECT_DIR$/HuffmansDecodedData.txt" />
-        <option value="$PROJECT_DIR$/src/huffman/HuffmansTree.java" />
+        <option value="$PROJECT_DIR$/filerleDecom.txt" />
+        <option value="$PROJECT_DIR$/filerleCom.txt" />
+        <option value="$PROJECT_DIR$/file1.txt" />
+        <option value="$PROJECT_DIR$/file.2txt" />
+        <option value="$PROJECT_DIR$/file3.txt" />
+        <option value="$PROJECT_DIR$/LZWComfile.txt" />
         <option value="$PROJECT_DIR$/file.txt" />
+        <option value="$PROJECT_DIR$/src/RLE_Image/main.java" />
+        <option value="$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java" />
+        <option value="$PROJECT_DIR$/src/huffman/Node.java" />
+        <option value="$PROJECT_DIR$/src/huffman/HuffmansTree.java" />
+        <option value="$PROJECT_DIR$/src/LZW/LZW.java" />
+        <option value="$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
+        <option value="$PROJECT_DIR$/src/Gui/Main_methods.java" />
+        <option value="$PROJECT_DIR$/src/Gui/Home.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="305" />
-    <option name="y" value="109" />
-    <option name="width" value="1114" />
-    <option name="height" value="1006" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -299,8 +402,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,12 +418,22 @@
               <item name="FinalYearProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalYearProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalYearProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="huffman_image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,8 +449,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\elian\Documents\FinalYearProject\Poster_Day" />
       <recent name="C:\Users\elian\Documents\FinalYearProject" />
+      <recent name="C:\Users\elian\Documents\FinalYearProject\src\RLE_text" />
+      <recent name="C:\Users\elian\Documents\FinalYearProject\Poster_Day" />
       <recent name="C:\Users\elian\Documents\FinalYearProject\src" />
     </key>
   </component>
@@ -351,7 +467,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HuffmansTree">
+  <component name="RunManager" selected="Application.Main_methods">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -454,25 +570,6 @@
       <module name="Project" />
       <envs />
     </configuration>
-    <configuration name="RLE_ImgFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="RLE_Image.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="RLE_Image.RLE_ImgFinal" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Project" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -487,14 +584,14 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="huff_img" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="finalRLEtxt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="huffman_image.*" />
+          <option name="PATTERN" value="RLE_text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="huffman_image.huff_img" />
+      <option name="MAIN_CLASS_NAME" value="RLE_text.finalRLEtxt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -515,6 +612,26 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="test.arecodesPrefixHFMIM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="arecodesPrefixHFMIM" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -568,18 +685,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main_methods" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RLE_ImgFinal" />
-      <item index="2" class="java.lang.String" itemvalue="Application.huff_img" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HuffmansTree" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LZW" />
+      <item index="1" class="java.lang.String" itemvalue="Application.HuffmansTree" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LZW" />
+      <item index="3" class="java.lang.String" itemvalue="Application.finalRLEtxt" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.test.arecodesPrefixHFMIM" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.HuffmansTree" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main_methods" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LZW" />
-        <item index="3" class="java.lang.String" itemvalue="Application.huff_img" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RLE_ImgFinal" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main_methods" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.test.arecodesPrefixHFMIM" />
+        <item index="2" class="java.lang.String" itemvalue="Application.finalRLEtxt" />
+        <item index="3" class="java.lang.String" itemvalue="Application.HuffmansTree" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LZW" />
       </list>
     </recent_temporary>
   </component>
@@ -600,8 +717,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test - 2018.04.03 at 19h 58m 37s.xml">
-      <configuration name="test" configurationId="JUnit" />
+    <history-entry file="test_arecodesPrefixHFMIM - 2018.04.27 at 09h 56m 27s.xml">
+      <configuration name="test.arecodesPrefixHFMIM" configurationId="JUnit" />
     </history-entry>
     <history-entry file="test_decompressionEqualityHUFF - 2018.03.30 at 22h 36m 54s.xml">
       <configuration name="test.decompressionEqualityHUFF" configurationId="JUnit" />
@@ -632,7 +749,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="305" y="109" width="1114" height="1006" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,12 +760,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3806999" sideWeight="0.14947917" order="7" side_tool="false" content_ui="tabs" x="0" y="340" width="1908" height="359" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4288914" sideWeight="0.85052085" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5397667" sideWeight="0.85052085" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1712204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12526767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -661,7 +779,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.126193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -672,7 +789,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/huffman/HuffmansTree.java</url>
-          <line>376</line>
+          <line>380</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
@@ -684,154 +801,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java</url>
-          <line>167</line>
+          <line>133</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LZW/LZW.java</url>
-          <line>244</line>
+          <line>230</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rleDeco.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1307" column="0" lean-forward="false" selection-start-line="1307" selection-start-column="0" selection-end-line="1307" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lzw_online/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lzw_online/l.java" />
-    <entry file="file://$PROJECT_DIR$/src/LZW_Img/lzw_img.java" />
-    <entry file="file://$PROJECT_DIR$/BitmapImg.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/Main_methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#379#416#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myTextFilerleDecom.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myTextFilerleCom.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8109">
-          <caret line="519" column="0" lean-forward="false" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="180" column="54" lean-forward="false" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
-          <folding>
-            <element signature="e#2893#2919#0" expanded="false" />
-            <element signature="e#6442#6489#0" expanded="false" />
-            <element signature="method#ButtonHandler#0;class#ButtonHandler#0;class#Home#0" expanded="false" />
-            <element signature="e#10700#10844#0" expanded="false" />
-            <element signature="e#11771#11847#0" expanded="false" />
-            <element signature="e#13752#13825#0" expanded="false" />
-            <element signature="e#15319#15355#0" expanded="false" />
-            <element signature="e#16237#16379#0" expanded="false" />
-            <element signature="e#17863#18045#0" expanded="false" />
-            <element signature="e#20573#20618#0" expanded="false" />
-            <element signature="e#20852#20880#0" expanded="false" />
-            <element signature="class#RadioButtonActionListener#0;class#Home#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#RadioButtonActionListener#0;class#Home#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#HelpButtonListener#0;class#Home#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_text/RLECObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#226#227#0" expanded="false" />
-            <element signature="e#253#254#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#320#321#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5559">
-          <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-          <folding>
-            <element signature="e#13945#13946#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3757">
           <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#3457#3530#0" expanded="false" />
-            <element signature="e#3763#3787#0" expanded="false" />
-            <element signature="e#3930#3990#0" expanded="false" />
-            <element signature="e#5716#5774#0" expanded="false" />
-            <element signature="e#6541#6567#0" expanded="false" />
-            <element signature="e#7042#7128#0" expanded="false" />
-            <element signature="e#8818#8897#0" expanded="false" />
-            <element signature="e#10292#10364#0" expanded="false" />
-            <element signature="method#decompress#0;class#finalRLEtxt#0" expanded="false" />
-            <element signature="e#12341#12409#0" expanded="false" />
-            <element signature="method#efficiency#0;class#finalRLEtxt#0" expanded="false" />
-            <element signature="e#15977#16010#0" expanded="false" />
-            <element signature="method#originalText#0;class#finalRLEtxt#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,23 +879,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LZW/LZW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#LZW#0;class#LZW#0" expanded="false" />
-            <element signature="method#compression#0;class#LZW#0" expanded="false" />
-            <element signature="method#getKeyByValue#0;class#LZW#0" expanded="false" />
-            <element signature="method#efficiency#0;class#LZW#0" expanded="false" />
-            <element signature="method#decompress#0;class#LZW#0" expanded="false" />
-            <element signature="e#4334#4373#0" expanded="false" />
-            <element signature="method#writoToFile#0;class#LZW#0" expanded="false" />
-            <element signature="method#main#0;class#LZW#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pic1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -917,191 +889,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_Image/Cobject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_Image/compressedObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_Image/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_Image/RLE_Img.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2788">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="484" column="60" lean-forward="false" selection-start-line="484" selection-start-column="60" selection-end-line="484" selection-end-column="60" />
-          <folding>
-            <element signature="e#2469#2520#0" expanded="false" />
-            <element signature="e#3716#3763#0" expanded="false" />
-            <element signature="e#4085#4141#0" expanded="false" />
-            <element signature="method#compressingColorArr#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#decompresser#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#decompressColor#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#efficiency#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#efficiencyColor#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#rebuilding#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="method#rebuildColor#0;class#RLE_ImgFinal#0" expanded="false" />
-            <element signature="e#19692#19821#0" expanded="false" />
-            <marker date="1524622956953" expanded="false" signature="11304:11312" ph="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/huffman_image/huff_Img_Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="method#huff_Img_Node#0;class#huff_Img_Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_Image/RLE_Img.java" />
     <entry file="file://$PROJECT_DIR$/jpeg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filerleCom.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filerleDecom.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HuffmansDecodedData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="130" lean-forward="false" selection-start-line="0" selection-start-column="130" selection-end-line="0" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/huffmansencondedData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/huffman_image/huff_img.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="222" column="112" lean-forward="false" selection-start-line="222" selection-start-column="112" selection-end-line="222" selection-end-column="112" />
-          <folding>
-            <element signature="method#huff_img#0;class#huff_img#0" expanded="false" />
-            <element signature="e#1509#1654#0" expanded="false" />
-            <element signature="method#buildHFT#0;class#huff_img#0" expanded="false" />
-            <element signature="method#assignEncoding#0;class#huff_img#0" expanded="false" />
-            <element signature="method#assignEncoding#1;class#huff_img#0" expanded="false" />
-            <element signature="method#encodeImage#0;class#huff_img#0" expanded="false" />
-            <element signature="method#decompress#0;class#huff_img#0" expanded="false" />
-            <element signature="e#6021#6083#0" expanded="false" />
-            <element signature="method#getKeyFromValue#0;class#huff_img#0" expanded="false" />
-            <element signature="method#decompress#1;class#huff_img#0" expanded="false" />
-            <element signature="e#7205#7223#0" expanded="false" />
-            <element signature="e#8476#8500#0" expanded="false" />
-            <element signature="method#areCodesPrefix#0;class#huff_img#0" expanded="false" />
-            <element signature="method#rebuildImage#0;class#huff_img#0" expanded="false" />
-            <element signature="e#12325#12369#0" expanded="false" />
-            <element signature="e#13704#13748#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HuffmansDecodedDatafile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/huffman/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/huffman/HuffmansTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="375" column="67" lean-forward="false" selection-start-line="375" selection-start-column="67" selection-end-line="375" selection-end-column="67" />
-          <folding>
-            <element signature="method#makeFreq#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="e#1903#1981#0" expanded="false" />
-            <element signature="method#makeMinHeap#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="method#buildHuffT#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="e#3989#4070#0" expanded="false" />
-            <element signature="method#getArrNodes#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="e#6840#6911#0" expanded="false" />
-            <element signature="method#charCode#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="method#originalTextHT#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="e#8300#8325#0" expanded="false" />
-            <element signature="e#9841#9889#0" expanded="false" />
-            <element signature="e#10225#10279#0" expanded="false" />
-            <element signature="e#10491#10517#0" expanded="false" />
-            <element signature="method#getKeyFromValue#0;class#HuffmansTree#0" expanded="false" />
-            <element signature="e#11862#11907#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZWComfile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LZWDecomfile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HuffmansDecodedData.txt" />
+    <entry file="file://$PROJECT_DIR$/huffmansencondedData.txt" />
     <entry file="file://$PROJECT_DIR$/LZWDecommyTextFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_text/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_text/RLE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1114,10 +929,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.java">
+    <entry file="file://$PROJECT_DIR$/src/RLE_text/RLECObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="306">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuffmansDecodedDatafile1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huffmansencondedDatafile1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rleDecom.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filerleDecom.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZWDecomfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LZWComfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuffmansDecodedDatafile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huffmansencondedDatafile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Help.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1125,8 +1036,230 @@
     <entry file="file://$PROJECT_DIR$/file.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/huffman/GraphViz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_Image/compressedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_Image/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/huffman_image/huff_Img_Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="method#huff_Img_Node#0;class#huff_Img_Node#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filerleCom.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/huffman/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_text/finalRLEtxt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="346" column="12" lean-forward="true" selection-start-line="346" selection-start-column="12" selection-end-line="349" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#719#0" expanded="false" />
+            <element signature="method#compress#0;class#finalRLEtxt#0" expanded="false" />
+            <element signature="e#1163#1200#0" expanded="false" />
+            <element signature="e#3371#3444#0" expanded="false" />
+            <element signature="e#3731#3791#0" expanded="false" />
+            <element signature="e#5517#5575#0" expanded="false" />
+            <element signature="e#6307#6333#0" expanded="false" />
+            <element signature="e#6813#6899#0" expanded="false" />
+            <element signature="e#8679#8758#0" expanded="false" />
+            <element signature="e#10121#10193#0" expanded="false" />
+            <element signature="e#11431#11527#0" expanded="false" />
+            <element signature="e#11612#11645#0" expanded="false" />
+            <element signature="e#15106#15139#0" expanded="false" />
+            <element signature="method#main#0;class#finalRLEtxt#0" expanded="false" />
+            <element signature="e#17115#17200#0" expanded="false" />
+            <element signature="e#17358#17420#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LZW/LZW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+          <folding>
+            <element signature="method#compression#0;class#LZW#0" expanded="false" />
+            <element signature="method#decompress#0;class#LZW#0" expanded="false" />
+            <element signature="e#3863#3902#0" expanded="false" />
+            <element signature="method#writoToFile#0;class#LZW#0" expanded="false" />
+            <element signature="method#main#0;class#LZW#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_Image/Cobject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RLE_Image/RLE_ImgFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="418" column="75" lean-forward="true" selection-start-line="418" selection-start-column="75" selection-end-line="418" selection-end-column="75" />
+          <folding>
+            <element signature="e#638#682#0" expanded="false" />
+            <element signature="method#RLE_ImgFinal#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="e#2474#2525#0" expanded="false" />
+            <element signature="e#3721#3768#0" expanded="false" />
+            <element signature="e#4089#4145#0" expanded="false" />
+            <element signature="method#compressingColorArr#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="method#decompressColor#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="method#efficiencyColor#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="method#rebuilding#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="method#efficiency#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="method#decompresser#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="e#17733#17741#0" expanded="true" />
+            <element signature="method#main#0;class#RLE_ImgFinal#0" expanded="false" />
+            <element signature="e#19677#19806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/huffman/HuffmansTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="298" column="86" lean-forward="false" selection-start-line="298" selection-start-column="86" selection-end-line="298" selection-end-column="86" />
+          <folding>
+            <element signature="e#2104#2182#0" expanded="false" />
+            <element signature="method#makeMinHeap#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#buildHuffT#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="e#4552#4633#0" expanded="false" />
+            <element signature="method#getArrNodes#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#assignEncoding#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#assignEncoding#1;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#Decompress#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#Decompress#1;class#HuffmansTree#0" expanded="false" />
+            <element signature="e#7272#7343#0" expanded="false" />
+            <element signature="method#charCode#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#originalTextHT#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="method#efficiencyHT#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="e#8732#8757#0" expanded="false" />
+            <element signature="method#exportBinaryString#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="e#10542#10590#0" expanded="false" />
+            <element signature="e#10926#10980#0" expanded="false" />
+            <element signature="e#11192#11218#0" expanded="false" />
+            <element signature="method#getKeyFromValue#0;class#HuffmansTree#0" expanded="false" />
+            <element signature="e#12832#12877#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="method#decompressionEqualityLZW#0;class#test#0" expanded="false" />
+            <element signature="method#decompressionEqualityRUN#0;class#test#0" expanded="false" />
+            <element signature="method#decompressionEqualityHUFF#0;class#test#0" expanded="false" />
+            <element signature="method#arecodesPrefixHFMIM#0;class#test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/huffman_image/huff_img.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+          <folding>
+            <element signature="method#huff_img#0;class#huff_img#0" expanded="false" />
+            <element signature="e#1509#1654#0" expanded="false" />
+            <element signature="method#assignEncoding#0;class#huff_img#0" expanded="false" />
+            <element signature="method#decompress#0;class#huff_img#0" expanded="false" />
+            <element signature="e#6021#6083#0" expanded="false" />
+            <element signature="method#getKeyFromValue#0;class#huff_img#0" expanded="false" />
+            <element signature="method#decompress#1;class#huff_img#0" expanded="false" />
+            <element signature="e#7205#7223#0" expanded="false" />
+            <element signature="e#8476#8500#0" expanded="false" />
+            <element signature="method#areCodesPrefix#0;class#huff_img#0" expanded="false" />
+            <element signature="method#rebuildImage#0;class#huff_img#0" expanded="false" />
+            <element signature="method#efficiency#0;class#huff_img#0" expanded="false" />
+            <element signature="e#12325#12369#0" expanded="false" />
+            <element signature="e#13704#13748#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui/Main_methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui/Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="661" column="0" lean-forward="true" selection-start-line="661" selection-start-column="0" selection-end-line="661" selection-end-column="0" />
+          <folding>
+            <element signature="e#1209#1235#0" expanded="false" />
+            <element signature="e#5772#5806#0" expanded="false" />
+            <element signature="e#6417#6464#0" expanded="false" />
+            <element signature="method#ButtonHandler#0;class#ButtonHandler#0;class#Home#0" expanded="false" />
+            <element signature="e#10595#10739#0" expanded="false" />
+            <element signature="e#16082#16097#0" expanded="true" />
+            <element signature="e#16876#17018#0" expanded="false" />
+            <element signature="e#18502#18684#0" expanded="false" />
+            <element signature="e#29656#29713#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,6 @@
 package LZW;
 
 
-import RLE_text.main;
-import org.apache.commons.lang3.builder.ToStringExclude;
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +9,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.DecimalFormat;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -29,6 +24,8 @@ public class LZW {
 
 
     public LZW(){
+
+        //creating the initial map chars 0-255
         mapSize=256;
 
         map=new HashMap<String,Integer>();
@@ -38,8 +35,6 @@ public class LZW {
 
     }
 
-
-
     public String compression(String uncompressed){
         String previous="";
         String Current="";
@@ -47,19 +42,18 @@ public class LZW {
 
         for (int i=0;i<uncompressed.length();i++){
 
-           //if(i!=uncompressed.length()){
-               //System.out.println("P "+previous);
+
             Current=uncompressed.substring(i,i+1);
-               //System.out.println("C :"+Current);
+
             newString=previous+Current;
-               //System.out.println("P + C: "+newString);
+
 
             if (map.containsKey(newString)){
-                //System.out.println(previous);
+
                 previous=newString;
 
             }else if(!map.containsKey(newString)){
-                //System.out.println(newString);
+
                 map.put(newString,mapSize++);
                 listOfChIndex.add(map.get(previous));
                 previous=Current;
@@ -75,8 +69,6 @@ public class LZW {
         return String.valueOf(listOfChIndex);
     }
 
-
-
     public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
         for (Map.Entry<T, E> entry : map.entrySet()) {
             if (Objects.equals(value, entry.getValue())) {
@@ -85,7 +77,6 @@ public class LZW {
         }
         return null;
     }
-
 
     public String efficiency(String uncompressed){
 
@@ -133,7 +124,6 @@ public class LZW {
         return String.format("%,.3f",savings)+"%";
     }
 
-
     public String decompress( List<Integer> compressedChars  ){
         HashMap<Integer,String> initialMap=new HashMap<>();
         int mapSize=256;
@@ -143,10 +133,7 @@ public class LZW {
         }
 
         decompressedText="";
-        //String previousWord;
-        String newWord;
-        //System.out.println();
-
+       String newWord;
 
         int previousWordIndex=(compressedChars.get(0));
         String previousWord=initialMap.get(previousWordIndex);
@@ -190,7 +177,6 @@ public class LZW {
             }else{
                 result=-1;
             }
-
             if (result!=-1){
                 previousWord+=currentWord;
                 newWord=null;
@@ -208,26 +194,26 @@ public class LZW {
                     previousWord=currentWord=newWord;
                 }
 
-
-
-
             } //System.out.println(decompressedText);
         }
         if (previousWord!=null){
             decompressedText+=previousWord;
         }
-        //System.out.println(initialMap.entrySet());
-        //System.out.println(decompressedText);
+
         return decompressedText;
     }
-
 
     public void writoToFile(String file){
 
         try {
 
+            //get path of project and make the file there
+            File currentDirFile = new File(".");
+            String helper = currentDirFile.getAbsolutePath();
+            String currentDir = helper.substring(0, helper.length() - currentDirFile.getCanonicalPath().length());
+
             //delete File if exists
-            Path path = FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", "LZWDecom"+file);
+            Path path = FileSystems.getDefault().getPath(currentDir, "LZWDecom"+file);
             boolean success= Files.deleteIfExists(path);
 
             //write decompressed text to file
@@ -237,11 +223,11 @@ public class LZW {
 
 
             //delete File if it exists
-            Path path2=FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", "LZWCom"+file);
+            Path path2=FileSystems.getDefault().getPath(currentDir, currentDir+"LZWCom"+file);
             boolean success2=Files.deleteIfExists(path2);
 
             //write compressed chars(respective index) to file
-            PrintWriter writer2=new PrintWriter(new File("LZWCom"+file));
+            PrintWriter writer2=new PrintWriter(new File(currentDir+"LZWCom"+file));
             writer2.println(Arrays.toString(listOfChIndex.toArray()));
             writer2.close();
 
@@ -252,6 +238,12 @@ public class LZW {
 
 
     }
+
+
+
+
+
+
 
 
 

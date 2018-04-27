@@ -44,12 +44,4 @@ public class Node implements  Comparable<Node>{
     public int compareTo(Node o) {
         return Integer.compare(freq,o.freq);
     }
-
-    
-
-
-
-
-
-
 }

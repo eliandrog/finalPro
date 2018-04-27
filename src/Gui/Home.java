@@ -2,7 +2,6 @@ package Gui;
 
 import LZW.LZW;
 import RLE_Image.RLE_ImgFinal;
-import RLE_text.RLE;
 import RLE_text.finalRLEtxt;
 import huffman.HuffmansTree;
 import huffman.Node;
@@ -39,8 +38,8 @@ public class Home extends JFrame{
     public JRadioButton txtRdBtn,picRdBtn;
     public ButtonGroup rdBtnsGroup;
     public JLabel text,text2,text3,resultCompare,errorMessage,keyArea;
-    public boolean open;
-    public  static File helpFilePath =new File("C:\\Users\\elian\\Documents\\FinalYearProject\\Help.txt"); //needs to be changed to appropriate path if project chnages environmnet
+//    public boolean open;
+//    public  static File helpFilePath =new File("C:\\Users\\elian\\Documents\\FinalYearProject\\Help.txt"); //needs to be changed to appropriate path if project chnages environmnet
 
 
     public final JComboBox<String> dl1,dl3 ;
@@ -70,7 +69,7 @@ public class Home extends JFrame{
         text2=new JLabel("Efficiency: ");
         text3=new JLabel("Efficiency: ");
         resultCompare=new JLabel("Most efficient algorithm(comparing chosen)");
-        errorMessage=new JLabel("No Errors");
+        errorMessage=new JLabel("");
         keyArea=new JLabel("<html>Key<br>" +
                 "Efficiency--> The percentage of memory that an algorithm has made redundant<br>" +
                 "Compression Ratio--> The ratio that one unit(bit) is represented by the algorithm<br>" +
@@ -157,7 +156,7 @@ public class Home extends JFrame{
 //        p.add(Box.createVerticalGlue()); // This will expand/contract as needed.
 //        p.add(keyArea);
 
-        //add(p,BorderLayout.EAST);
+        //add(p,BorderLayout.EAST);f
 
 
         //adding panels to frame with its particular position
@@ -217,7 +216,7 @@ public class Home extends JFrame{
         public void actionPerformed(ActionEvent e){
             submit:
             if(e.getSource()==theGUI.sumbitBtn){
-                theGUI.errorMessage.setText("No Error");
+                theGUI.errorMessage.setText("");
                 theGUI.repaint();
                 System.out.println("here");
                 //test for text files (later)
@@ -259,7 +258,6 @@ public class Home extends JFrame{
 
 
 
-                            System.out.println("its the same");
                             theGUI.errorMessage.setText("Please do not choose an algorithm more than once");
                             theGUI.repaint();
 
@@ -268,7 +266,7 @@ public class Home extends JFrame{
                             //break submit;
                         } else {
                          //if all the algorithms are different
-                            theGUI.errorMessage.setText("No errors");
+                            theGUI.errorMessage.setText("");
                             theGUI.repaint();
 
                             //making sure user can dynamically see the error message
@@ -279,6 +277,7 @@ public class Home extends JFrame{
                             String pattern="^\\b(.+)(\\.txt)\\b$";
                             Pattern r=Pattern.compile(pattern);
                             Matcher m=r.matcher(filename);
+
 
 
                             //if its not the structure prints error message
@@ -300,17 +299,30 @@ public class Home extends JFrame{
 //                                    System.out.println("im in the else");
 //                                    break submit;
                                 //}
+                            }else if(       new File(new File(".").getAbsolutePath().substring(0, new File(".").getAbsolutePath().length() - new File(".").getCanonicalPath().length())).exists() &&
+                                            !new File(new File(".").getAbsolutePath().substring(0, new File(".").getAbsolutePath().length() - new File(".").getCanonicalPath().length())).isDirectory()){
+
+
+                                 //File currentDirFile = new File(".");
+                                 //String project directory = currentDirFile.getAbsolutePath();
+                                 String currentDir  = new File(".").getAbsolutePath().substring(0, new File(".").getAbsolutePath().length() - new File(".").getCanonicalPath().length());
+                                 theGUI.errorMessage.setText("File does not exist chose anotherone");theGUI.repaint();
+
+                             }else if(!new Scanner(new File(filename)).hasNextLine()){
+
+                                 //prints problem of empty file
+                                 theGUI.errorMessage.setText("This file "+filename+" is empty compress another one");theGUI.repaint();
+
                             }else{
 
-//                                if (errorMessage.getText().length() > 0) {
-//                                    theGUI.remove(errorMessage);
-//                                    //theGUI.repaint();
-//                                }
-                                 theGUI.errorMessage.setText("No Errors");
+
+
+                                 theGUI.errorMessage.setText("");
                                  theGUI.repaint();
                                  System.out.println("Its not the same");
                                  //theGUI.errorMessage.setText("compressing");
                                  //RLE algorithm
+
                                  String RunEfficiency = "";
                                  finalRLEtxt rle=new finalRLEtxt();
                                  rle.compress(filename);
@@ -359,8 +371,7 @@ public class Home extends JFrame{
 
                                 //finding which compression is the most efficient
                                 HashMap<String,Double> algorithmsPercentile= new HashMap<String,Double>();
-                                //algorithmsPercentile.put("s",4.4);
-                                //System.out.println(RunEfficiency.substring(0,RunEfficiency.length()-2));
+
 
                                 //adding each algorith with the respective effectiveness
                                 algorithmsPercentile.put("Run-Length-Encoding",Double.valueOf(RunEfficiency.substring(0,RunEfficiency.length()-1)));
@@ -483,10 +494,6 @@ public class Home extends JFrame{
                                         theGUI.repaint();
 
 
-
-
-
-
                                         //Huffmans encoding Image
                                         theGUI.errorMessage.setText("Compressing Image and assigning codes to pixels");theGUI.repaint();
                                         huff_img huff = new huff_img(filename);
@@ -503,10 +510,6 @@ public class Home extends JFrame{
 
                                         theGUI.text2.setText("The efficiency of Huffmans Encoding is " + efficiencyHUFF + "%     Compression Ratio:  "+huff.compressionRatioHFIMG);
                                         theGUI.repaint();
-
-
-
-
 
 
 
@@ -570,7 +573,7 @@ public class Home extends JFrame{
     }
 
 
-    class RadioButtonActionListener implements ActionListener {
+    class RadioButtonActionListener implements ActionListener{
 
         Home theGui;
 
@@ -578,7 +581,7 @@ public class Home extends JFrame{
             theGui=gui;
         }
 
-        @Override
+
         public void actionPerformed(ActionEvent event) {
             JRadioButton button = (JRadioButton) event.getSource();
 
@@ -596,7 +599,7 @@ public class Home extends JFrame{
                     theGui.text2.setText("Efficiency: ");
                     theGui.text3.setText("Efficiency: ");
                     theGui.resultCompare.setText("Most efficient algorithm(comparing chosen)");
-                    theGui.errorMessage.setText("No errors");
+                    theGui.errorMessage.setText("");
                 }
 
                 theGui.repaint();
@@ -617,7 +620,7 @@ public class Home extends JFrame{
                     theGui.text2.setText("Efficiency: ");
                     theGui.text3.setText("");
                     theGui.resultCompare.setText("Most efficient algorithm(comparing chosen)");
-                    theGui.errorMessage.setText("No errors");
+                    theGui.errorMessage.setText("");
                 }
 
                 theGui.repaint();
@@ -647,27 +650,41 @@ public class Home extends JFrame{
 
         }
 
-        @Override
+
         public void actionPerformed(ActionEvent ae){
             //button handler for help button
             if (ae.getSource()==theGui.help){
-                System.out.println("i am");
-                // help document appears when its not opened already
-                if (helpFilePath.canWrite()){
-                    System.out.println("here");
-                    if (Desktop.isDesktopSupported()) {
-                        try {
-                            System.out.println("here");
-                            Desktop.getDesktop().edit(helpFilePath);
-                            open=true;
+                try {
+                    //get path of project and make get the file Help.txt from there
+                    File currentDirFile = new File(".");
+                    String helper = currentDirFile.getAbsolutePath();
+                    String currentDir = helper.substring(0, helper.length() - currentDirFile.getCanonicalPath().length());
 
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                    File h=new File(currentDir+"Help.txt");
+                    // help document appears when its not opened already
+                    if (h.canWrite()){
+                        System.out.println("here");
+                        if (Desktop.isDesktopSupported()) {
+                            try {
+                                System.out.println("here");
+                                Desktop.getDesktop().edit(h);
+                                //open=true;
+                                theGui.errorMessage.setText("Help file Opened");theGui.repaint();
 
+                            } catch (IOException e) {
+                                e.printStackTrace();
+
+                            }
+                        } else {
+                            theGui.errorMessage.setText("Can not open the help file");theGui.repaint();
                         }
-                    } else {
-                        theGui.errorMessage.setText("Can not open the help file");
+                    }else{
+                        theGui.errorMessage.setText("Cannot open the help file");theGui.repaint();
                     }
+                } catch (IOException e) {
+                e.printStackTrace();
+                    theGui.errorMessage.setText("Cannot open the help file");theGui.repaint();
+
                 }
 
             }

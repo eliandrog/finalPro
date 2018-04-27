@@ -28,10 +28,9 @@ public class HuffmansTree  {
     public HuffmansTree(){}
 
 
-
-
     public static HashMap<Character, Integer> makeFreq(String lines){
         //HashMap<Character,Integer> mapFreq=new HashMap<Character,Integer>();
+        //makes frequency of every character
         if (lines.length()==0){
             if(mapFreq.containsKey((char)12)){
                 int oldv=mapFreq.get((char)12);
@@ -53,7 +52,9 @@ public class HuffmansTree  {
         List<Map.Entry<Character,Integer>> list= new LinkedList<>(mapFreq.entrySet());
         list.sort(Collections.reverseOrder(Comparator.comparing(Map.Entry::getValue)));
 
+        //makes linkedHash map which retain order in which you add it in
         HashMap<Character,Integer>sortedmap= new LinkedHashMap<>();
+        //addes sorted list elements to the linked hash map making it sorted by def.
         for (Map.Entry<Character,Integer> entry:list){
             sortedmap.put(entry.getKey(),entry.getValue());
         }
@@ -109,23 +110,22 @@ public class HuffmansTree  {
 
         Iterator<Map.Entry<Character, Integer>> it=freqMap.entrySet().iterator();
         PriorityQueue<Node> pQueue = new PriorityQueue<>();
-
+        //iterate thorugh map and make Node out of the elements in the map
         for (Map.Entry<Character,Integer> e:freqMap.entrySet()
              ) {
 
-
             Node n=new Node(e.getKey(),e.getValue(),null,null);
+            //add nodes to priority queue
             pQueue.add(n);
         }
 
-
-
-
+        //size of priority queue is one
         if (pQueue.size()==1){
 
             pQueue.add(new Node('\0',1,null,null));
         }
-
+        //else iterate through the pqueue and get the smallest 2 values and make a a node out of it wh=ith the left and right children
+        //adding the frequencies together to make the parent node frequency
         while(pQueue.size()>1){
             //because my list increases from right to left so bigger numbers are always after
 //            Node left=listOfNodes.get(1);
@@ -147,20 +147,13 @@ public class HuffmansTree  {
             Node rightPQ=pQueue.poll();
 
             Node parentPQ=new Node('\0',leftPQ.freq+rightPQ.freq,leftPQ,rightPQ); //special char '\0' means its not a leaf node
+            //add parent node to priority queue
             pQueue.add(parentPQ);
 
 
-            //System.out.println("PQ     "+Arrays.toString(listOfNodes.toArray()));
-
-
         }
-        //excdeption
 
-
-        //because extra parent made
-        //listOfNodes.remove(1);
-        //System.out.println(listOfNodes.toString());
-
+        //return last value which is the final node
         return pQueue.poll() ;
     }
 
@@ -213,6 +206,7 @@ public class HuffmansTree  {
             decompressedAssignCodes.put(finalNode.c,s);
         }
     }
+
 
 
 //    public static HuffmanCompressionResult compression(String lines){
@@ -284,9 +278,14 @@ public class HuffmansTree  {
         //exporting encoded data to file
         String filename="huffmansencondedData";
         try {
-            Path path=  FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", filename+fileName);
+            //get path of project and make the file there
+            File currentDirFile = new File(".");
+            String helper = currentDirFile.getAbsolutePath();
+            String currentDir = helper.substring(0, helper.length() - currentDirFile.getCanonicalPath().length());
+
+            Path path=  FileSystems.getDefault().getPath(currentDir, filename+fileName);
             boolean success= Files.deleteIfExists(path);
-            PrintWriter file=new PrintWriter(filename+fileName,"UTF-8");
+            PrintWriter file=new PrintWriter(new File(currentDir+filename+fileName,"UTF-8"));
             file.println(String.valueOf(compressionBits));
             //System.out.println(compressionBits);
             file.close();
@@ -329,11 +328,16 @@ public class HuffmansTree  {
         //System.out.println(decompressedHT);
 
         try {
+            //get path of project and make the file there
+            File currentDirFile = new File(".");
+            String helper = currentDirFile.getAbsolutePath();
+            String currentDir = helper.substring(0, helper.length() - currentDirFile.getCanonicalPath().length());
+
             //Decoded data printing it to a file
             //change the path of the given file sytem if compiled in different environment
-            Path path=  FileSystems.getDefault().getPath("C:\\Users\\elian\\Documents\\FinalYearProject", "HuffmansDecodedData"+fileName);
+            Path path=  FileSystems.getDefault().getPath(currentDir, "HuffmansDecodedData"+fileName);
             boolean success= Files.deleteIfExists(path);
-            PrintWriter fileo=new PrintWriter("HuffmansDecodedData"+fileName);
+            PrintWriter fileo=new PrintWriter(new File(currentDir+"HuffmansDecodedData"+fileName));
             fileo.println(decompressedHT);
             fileo.close();
 
